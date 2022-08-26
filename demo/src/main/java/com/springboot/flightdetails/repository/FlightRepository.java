@@ -9,5 +9,6 @@ import com.springboot.flightdetails.repository.model.Flight;
 
 public interface FlightRepository extends JpaRepository<Flight, Integer> {
 	Optional<Flight> findByFlightNumber(String flightNumber);
-	Optional<List<Flight>> findByOriginAndDestination(String origin,String destination);
+
+	Optional<List<Flight>> findByOriginAndDestination(String origin, String destination);
 }

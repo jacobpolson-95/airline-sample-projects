@@ -13,7 +13,7 @@ public class ErrorResponseController {
 
 	@ExceptionHandler
 	public ErrorResponse handleSecurityException(CommonException se) {
-		ErrorResponse response = new ErrorResponse(se.getStatus(),se.getMessage());
-        return response;
-    }
+		ErrorResponse response = new ErrorResponse(se.getStatus(), se.getMessage());
+		return response;
+	}
 }
